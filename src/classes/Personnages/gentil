@@ -1,0 +1,18 @@
+import Personnages from './classes/personnages'
+
+export default class gentil extends Personnages{
+private _role:any;
+
+constructor(nom='',pv=0, pvMax= 0, def= 0, role=0){
+super(nom, pv, pvMax, def)
+this._role = role;
+}
+get role()
+  {
+  return this._role;
+  }
+set role(role: number)
+  {
+  this._role = role;
+  }
+}

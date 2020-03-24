@@ -1,0 +1,7 @@
+import Armes from "./Armes/stuff";
+
+export default class Katana extends Armes {
+  constructor(dpsMin = 0, dpsMax = 0, crit = 0) {
+   super(dpsMin, dpsMax ,crit) 
+  }
+}

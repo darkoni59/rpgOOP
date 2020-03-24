@@ -1,0 +1,8 @@
+import Armes from './Armes/stuff';
+export default class Dague extends Armes {
+  
+  constructor(dpsMin = 0, dpsMax = 0, crit = 0) {
+   
+    super(dpsMin, dpsMax ,crit) 
+  }
+}

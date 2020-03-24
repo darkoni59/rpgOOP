@@ -1,0 +1,39 @@
+import Armes from './Armes/stuff';
+
+
+export default class Armes {
+    //Variables d'instance
+    private _dpsMin: number;
+    private _dpsMax: number;
+    private _crit: number;
+  
+    constructor(dpsMin = 0, dpsMax = 0, crit = 0) {
+      this._dpsMin = dpsMin;
+      this._dpsMax = dpsMax;
+      this._crit = crit;
+    }
+  
+    get dpsMin() {
+      return this._dpsMin;
+    }
+  
+    set dpsMin(dpsMin: number) {
+      this._dpsMin = dpsMin;
+    }
+  
+    get dpsMax() {
+      return this._dpsMax;
+    }
+  
+    set dpsMax(dpsMax: number) {
+      this._dpsMax = dpsMax;
+    }
+  
+    get crit() {
+      return this._crit;
+    }
+  
+    set crit(crit: number) {
+      this._crit = crit;
+    }
+  }

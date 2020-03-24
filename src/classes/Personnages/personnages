@@ -1,0 +1,62 @@
+import Armes from './Armes/stuff'
+
+export default class Personnages{
+
+private _nom:string;
+private _pv: number;
+private _pvMax: number;
+private _def: number;
+private _arme: Armes;
+
+constructor (
+  nom = "",
+  pv = 0,
+  pvMax = 0,
+  def = 0,
+  arme = new Armes()
+)
+{
+this._nom = nom;
+this._pv = pv;
+this._pvMax = pvMax;
+this._def = def;
+this._arme = arme
+
+}
+get nom(){
+  return this._nom;
+}
+set nom(nom: string){
+  
+  this._nom = nom;
+}get pv(){
+  return this._pv;
+}
+set pv(pv: number){
+  
+  this._pv = pv;
+}
+get pvMax(){
+  return this._pvMax;
+}
+set pvMax(pvMax: number){
+  
+  this._pvMax = pvMax;
+}
+get def(){
+  return this._def;
+}
+set def(def: number){
+  
+  this._def = def;
+}
+get arme(){
+  return this._arme;
+}
+set arme(arme: Armes){
+  
+  this._arme = arme;
+}
+
+
+}

@@ -28,6 +28,7 @@
         "esModuleInterop": true,
         // détermine le javascript utilisé
         "module": "esnext",
+        "moduleResolution": "node"
     },
     // path des fichiers à chercher
     "include": [
